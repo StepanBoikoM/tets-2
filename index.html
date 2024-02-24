@@ -45,16 +45,18 @@
     <script>
         let tg = window.Telegram.WebApp;
         let button = document.querySelector('#click');
-        
+        let button2 = document.querySelector('#click2');
         let h1_number = document.querySelector('#number');
         let count = 0;
     
         button.addEventListener('click', function(){
             count++;
             h1_number.textContent = count;
-            tg.sendData(count)
-            tg.close()
-            
+        });
+        
+        button2.addEventListener('click', function(){
+            tg.sendData(count);
+            tg.close();
         });
         
     </script>
