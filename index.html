@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+</head>
+<body>
+    <h1><b>Кликер</b></h1>
+    <h1 id="number">0</h1>
+    <button id="click">Нажать</button>
+    <style>
+        .h1{
+            color: white;
+        }
+
+    </style>
+    <script>
+        let button = document.querySelector('#click');
+        let h1_number = document.querySelector('#number');
+        let count = 0;
+    
+        button.addEventListener('click', function(){
+            count++;
+            h1_number.textContent = count;
+        });
+    </script>
+</body>
+</html>
